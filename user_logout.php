@@ -1,0 +1,12 @@
+<?php
+session_start();
+$email=$_SESSION['email'];
+if($email==true)
+{
+session_unset();
+header("location:user_login.php");
+}
+else{
+    header("location:user_login.php");
+}
+?>

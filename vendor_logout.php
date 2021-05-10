@@ -1,0 +1,12 @@
+<?php
+session_start();
+$email_vendor=$_SESSION['email_vendor'];
+if($email_vendor==true)
+{
+session_unset();
+header("location:vendor_login.php");
+}
+else{
+    header("location:vendor_login.php");
+}
+?>
